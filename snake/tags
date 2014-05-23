@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DOWN	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	e	enum:Direction
+Direction	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	g
+Direction	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	t	typeref:enum:Direction
+LEFT	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	e	enum:Direction
+List	linked_list.h	/^typedef struct List$/;"	s
+List	linked_list.h	/^} List;$/;"	t	typeref:struct:List
+ListNode	linked_list.h	/^typedef struct ListNode $/;"	s
+ListNode	linked_list.h	/^} ListNode;$/;"	t	typeref:struct:ListNode
+Point	defines.h	/^typedef struct Point {$/;"	s
+Point	defines.h	/^} Point;$/;"	t	typeref:struct:Point
+RIGHT	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	e	enum:Direction
+SNAKE_INITIAL_LENGTH	main.c	13;"	d	file:
+Snake	snake.h	/^typedef List Snake;$/;"	t
+TICKRATE	main.c	11;"	d	file:
+UP	defines.h	/^typedef enum Direction { UP, DOWN, RIGHT, LEFT } Direction;$/;"	e	enum:Direction
+WORLD_HEIGHT	main.c	10;"	d	file:
+WORLD_WIDTH	main.c	9;"	d	file:
+__LINKED_LIST_H	linked_list.h	4;"	d
+appendSnakePartWithPoint	snake.c	/^void appendSnakePartWithPoint(Snake *snake, Point *position)$/;"	f
+are_points_equal	main.c	/^int are_points_equal(Point a, Point b)$/;"	f
+ch	main.c	/^    int ch;$/;"	l
+create_world	main.c	/^WINDOW *create_world()$/;"	f
+current	linked_list.c	/^  ListNode *current, *next;$/;"	l
+current_node	snake.c	/^  ListNode *current_node = snake->head;$/;"	l
+current_snake_part	snake.c	/^    Point *current_snake_part = (Point *)current_node->value;$/;"	l
+direction	main.c	/^    Direction direction = RIGHT;$/;"	l
+direction_for_key	main.c	/^Direction direction_for_key(int ch)$/;"	f
+draw_snake	main.c	/^void draw_snake(WINDOW *win, Snake *snake)$/;"	f
+food_point	main.c	/^    Point food_point;$/;"	l
+food_position	main.c	/^  Point food_position;$/;"	l
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v
+getPositionInBound	snake.c	/^int getPositionInBound(int n, int max_bound)$/;"	f
+head	linked_list.h	/^  ListNode *head;$/;"	m	struct:List
+i	snake.c	/^   int i;$/;"	l
+list	linked_list.c	/^  List *list = malloc(sizeof(List));$/;"	l
+ll_append_list_node	linked_list.c	/^void ll_append_list_node(List *list, ListNode *node)$/;"	f
+ll_create_list	linked_list.c	/^List *ll_create_list(void)$/;"	f
+ll_free_list	linked_list.c	/^void ll_free_list(List *list)$/;"	f
+ll_prepend_list_node	linked_list.c	/^void ll_prepend_list_node(List *list, ListNode *node)$/;"	f
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+moveX	snake.c	/^  int moveX = 0;$/;"	l
+moveY	snake.c	/^  int moveY = 0;$/;"	l
+new_food_position	main.c	/^Point new_food_position()$/;"	f
+new_part_node	snake.c	/^  ListNode *new_part_node = malloc(sizeof(ListNode));$/;"	l
+new_part_position	snake.c	/^  Point *new_part_position = malloc(sizeof(Point));$/;"	l
+next	linked_list.c	/^  ListNode *current, *next;$/;"	l
+next	linked_list.h	/^  struct ListNode *next;$/;"	m	struct:ListNode	typeref:struct:ListNode::ListNode
+next_node	snake.c	/^  ListNode *next_node = current_node->next;$/;"	l
+next_snake_part	snake.c	/^    Point *next_snake_part = (Point *)next_node->value;$/;"	l
+node	snake.c	/^     ListNode *node = malloc(sizeof(ListNode));$/;"	l
+offsetX	main.c	/^  int offsetX = (COLS - WORLD_WIDTH) \/ 2;$/;"	l
+offsetY	main.c	/^  int offsetY = (LINES - WORLD_HEIGHT) \/ 2;$/;"	l
+position	snake.c	/^     Point *position = malloc(sizeof(Point));$/;"	l
+pre_tail	snake.c	/^  ListNode *pre_tail = snake_tail->next;$/;"	l
+pre_tail_position	snake.c	/^  Point *pre_tail_position = (Point *)pre_tail->value;$/;"	l
+size	linked_list.c	/^  int size = list->size;$/;"	l
+size	linked_list.h	/^  size_t size;$/;"	m	struct:List
+snake	main.c	/^    Snake *snake;$/;"	l
+snake	snake.c	/^   Snake *snake = ll_create_list();$/;"	l
+snake_add_part_to_tail	snake.c	/^void snake_add_part_to_tail(Snake *snake)$/;"	f
+snake_create	snake.c	/^Snake *snake_create(int size)$/;"	f
+snake_head	main.c	/^      Point *snake_head = (Point *)snake->tail->value;$/;"	l
+snake_move	snake.c	/^void snake_move(Snake *snake, Direction direction, int max_width, int max_height)$/;"	f
+snake_part	main.c	/^  ListNode *snake_part = snake->head;$/;"	l
+snake_part_position	main.c	/^    Point *snake_part_position = (Point *)snake_part->value;$/;"	l
+snake_tail	snake.c	/^  ListNode *snake_tail = snake->head;$/;"	l
+snake_tail_node	snake.c	/^  ListNode *snake_tail_node = snake->tail;$/;"	l
+snake_tail_part	snake.c	/^  Point *snake_tail_part = (Point *)snake_tail_node->value;$/;"	l
+tail	linked_list.c	/^    ListNode *tail = list->tail;$/;"	l
+tail	linked_list.h	/^  ListNode *tail;$/;"	m	struct:List
+tail_position	snake.c	/^  Point *tail_position = (Point *)snake_tail->value;$/;"	l
+value	linked_list.h	/^  void *value;$/;"	m	struct:ListNode
+world	main.c	/^    WINDOW *world;$/;"	l
+x	defines.h	/^  int x;$/;"	m	struct:Point
+x_change	snake.c	/^  int x_change = tail_position->x - pre_tail_position->x;$/;"	l
+y	defines.h	/^  int y;$/;"	m	struct:Point
+y_change	snake.c	/^  int y_change = tail_position->y - pre_tail_position->y;$/;"	l
